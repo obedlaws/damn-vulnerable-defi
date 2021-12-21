@@ -4,8 +4,8 @@
 
 Created by [@tinchoabbate](https://twitter.com/tinchoabbate) at OpenZeppelin
 
-## My Progress - @obedlaws
-Just started to complete this CTF. [:::: 12.5%]
+## My Progress - @obedlaws                                              
+Just started to complete this CTF. [ ::::                             ] 12.5%
 
 
 ## Play
