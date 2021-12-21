@@ -4,11 +4,11 @@
 
 Created by [@tinchoabbate](https://twitter.com/tinchoabbate) at OpenZeppelin
 
-## My Progress - @obedlaws [: ] 12.5%
+## My Progress - @obedlaws [::: ] 37.5%
     
 1. ✓ Unstoppable
-2. X Naive Receiver
-3. X Truster
+2. ✓ Naive Receiver
+3. ✓ Truster
 4. X Side Entrance
 5. X The Rewarder
 6. X Selfie
