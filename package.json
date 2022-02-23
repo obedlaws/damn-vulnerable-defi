@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@nomiclabs/buidler": "1.4.7",
-    "@openzeppelin/contracts": "3.0.0",
+    "@openzeppelin/contracts": "^3.0.0",
     "@openzeppelin/test-helpers": "^0.5.5",
     "ganache-core": "^2.13.2"
   },

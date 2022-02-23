@@ -10,9 +10,9 @@ Created by [@tinchoabbate](https://twitter.com/tinchoabbate) at OpenZeppelin
 2. ✓ Naive Receiver
 3. ✓ Truster
 4. ✓ Side Entrance
-5. X The Rewarder
-6. X Selfie
-7. X Compromised
+5. ✓ The Rewarder
+6. ✓ Selfie
+7. ✓ Compromised
 8. X Puppet
 
 ## Play

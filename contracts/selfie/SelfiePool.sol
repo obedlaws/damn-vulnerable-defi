@@ -52,3 +52,4 @@ contract SelfiePool is ReentrancyGuard {
         emit FundsDrained(receiver, amount);
     }
 }
+
