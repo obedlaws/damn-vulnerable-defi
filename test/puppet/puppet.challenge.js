@@ -2,6 +2,7 @@ const { ether, BN, balance } = require('@openzeppelin/test-helpers');
 const { accounts, contract, web3 } = require('@openzeppelin/test-environment');
 const { expect } = require('chai');
 
+
 // Hacky way to easily get the Uniswap v1 contracts as artifacts
 // These were taken straight from https://github.com/Uniswap/uniswap-v1/tree/c10c08d81d6114f694baa8bd32f555a40f6264da/abi 
 contract.artifactsDir = 'build-uniswap-v1';
@@ -13,6 +14,7 @@ contract.artifactsDir = 'build/contracts';
 const DamnValuableToken = contract.fromArtifact('DamnValuableToken');
 const PuppetPool = contract.fromArtifact('PuppetPool');
 
+const Attacker = contract.fromArtifact('Attacker');
 
 // Calculates how much ETH (in wei) Uniswap will pay for the given amount of tokens
 function calculateTokenToEthInputPrice(tokensSold, tokensInReserve, etherInReserve) {
@@ -93,6 +95,20 @@ describe('[Challenge] Puppet', function () {
 
     it('Exploit', async function () {
         /** YOUR EXPLOIT GOES HERE */
+
+        this.attacker = await Attacker.new(
+            this.token.address,
+            this.lendingPool.address,
+            this.uniswapExchange.address,
+            { from: attacker }
+        );
+
+        await this.token.transfer(this.attacker.address, ATTACKER_INITAL_TOKEN_BALANCE, {
+            from: attacker,
+        });
+
+        await this.attacker.attack(ether(`0.1`).toString(), { from: attacker });
+        
     });
 
     after(async function () {

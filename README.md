@@ -13,7 +13,7 @@ Created by [@tinchoabbate](https://twitter.com/tinchoabbate) at OpenZeppelin
 5. ✓ The Rewarder
 6. ✓ Selfie
 7. ✓ Compromised
-8. X Puppet
+8. ✓ Puppet
 
 ## Play
 Visit [damnvulnerabledefi.xyz](https://damnvulnerabledefi.xyz)!
